@@ -34,7 +34,7 @@ class CardUI extends StatelessWidget {
                       ),
                     ),
                     const Text(
-                      "Universalbank",
+                      "Birbalobank",
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -46,7 +46,7 @@ class CardUI extends StatelessWidget {
               ),
               Container(
                 width: MediaQuery.of(context).size.width * .55,
-                margin: const EdgeInsets.only(top: 60),
+                margin: const EdgeInsets.only(top: 45),
                 child: Center(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -54,7 +54,7 @@ class CardUI extends StatelessWidget {
                       Text(
                         "1234 ",
                         style: TextStyle(
-                            fontSize: 20,
+                            fontSize: 23,
                             fontWeight: FontWeight.w400,
                             color: Colors.white,
                             fontFamily: "poppins"),
@@ -62,7 +62,7 @@ class CardUI extends StatelessWidget {
                       Text(
                         " **** ",
                         style: TextStyle(
-                            fontSize: 20,
+                            fontSize: 23,
                             fontWeight: FontWeight.w400,
                             color: Colors.white,
                             fontFamily: "poppins"),
@@ -70,7 +70,7 @@ class CardUI extends StatelessWidget {
                       Text(
                         " **** ",
                         style: TextStyle(
-                            fontSize: 20,
+                            fontSize: 23,
                             fontWeight: FontWeight.w400,
                             color: Colors.white,
                             fontFamily: "poppins"),
@@ -78,7 +78,7 @@ class CardUI extends StatelessWidget {
                       Text(
                         " 1234",
                         style: TextStyle(
-                            fontSize: 20,
+                            fontSize: 23,
                             fontWeight: FontWeight.w400,
                             color: Colors.white,
                             fontFamily: "poppins"),

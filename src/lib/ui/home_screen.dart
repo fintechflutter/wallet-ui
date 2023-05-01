@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:media/ui/card.dart';
+import 'package:media/ui/currency.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -39,7 +40,7 @@ class HomeScreen extends StatelessWidget {
                               child: Center(
                                 child: Column(
                                   children: const [
-                                    Text("\$1344",
+                                    Text("\$1400",
                                         style: TextStyle(
                                             fontSize: 22,
                                             color: Colors.white,
@@ -47,7 +48,7 @@ class HomeScreen extends StatelessWidget {
                                             fontWeight: FontWeight.bold)),
                                     Text(""),
                                     Text(
-                                      "KIUTviut..OB",
+                                      "92b4**********446dcb40269",
                                       style: TextStyle(
                                         fontSize: 16,
                                         color: Colors.white,
@@ -182,104 +183,7 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
           ),
-          Center(
-            child: Container(
-              margin: const EdgeInsets.only(
-                top: 20,
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    // margin: const EdgeInsets.only(right: 10, left: 10),
-                    width: MediaQuery.of(context).size.width * .88,
-                    height: 70,
-                    decoration: const BoxDecoration(
-                      color: Color.fromARGB(255, 71, 58, 95),
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
-                    ),
-                    child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Container(
-                                margin: const EdgeInsets.only(left: 10),
-                                height: 50,
-                                width: 50,
-                                decoration: const BoxDecoration(
-                                    image: DecorationImage(
-                                        image:
-                                            AssetImage("assets/svg/ton.png"))),
-                              ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                // mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Container(
-                                    margin: const EdgeInsets.only(
-                                        top: 11, left: 10),
-                                    child: Column(children: [
-                                      const Text(
-                                        "Toncoin",
-                                        style: TextStyle(
-                                            fontSize: 20,
-                                            fontFamily: "poppins",
-                                            color: Colors.white),
-                                      ),
-                                      Row(
-                                        children: const [
-                                          Text(
-                                            "\$2,17 ",
-                                            style: TextStyle(
-                                                color: Colors.white,
-                                                fontFamily: "poppins"),
-                                          ),
-                                          Text(" -1,47",
-                                              style: TextStyle(
-                                                  color: Colors.red,
-                                                  fontFamily: "poppins"))
-                                        ],
-                                      )
-                                    ]),
-                                  )
-                                ],
-                              ),
-                            ],
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [
-                              Container(
-                                margin:
-                                    const EdgeInsets.only(top: 17, right: 10),
-                                child: Column(
-                                  children: const [
-                                    Text(
-                                      "0",
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontFamily: "poppins"),
-                                    ),
-                                    Text(
-                                      "\$0",
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontFamily: "poppins"),
-                                    )
-                                  ],
-                                ),
-                              )
-                            ],
-                          )
-                        ]),
-                  ),
-                ],
-              ),
-            ),
-          ),
+          const CurrencyWidget(),
 
           // Kartalar boshlandi
           CardUI(),
